@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Aura & Frame</title>
+    <link rel="icon" type="image/png" href="a&flogo.png">
+    <style>
+        body{
+            margin: 0;
+            background-color: #FFFDF9;
+            color: #1A1A1A;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #C79A3B;
+            background-color: #FFFDF9;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .aflogo{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .aflogo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        .aflogo h1{
+            color: #1A1A1A;
+            font-family: Garamond, Georgia, serif;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .af{
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+        .af a{
+            font-size: 24px;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-family: Garamond, Georgia, serif;
+            transition: 0.3s;
+        }
+        .af a:hover{
+            color: #C79A3B;
+            transform: translateY(-2px);
+        }
+        .gallery-heading{
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        .gallery-heading h1{
+            font-family: Garamond, Georgia, serif;
+            font-size: 45px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .gallery-heading p{
+            color: #C79A3B;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 4px;
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px 60px 60px;
+        }
+        .gallery-item{
+            width: 350px;
+            background-color: #FDF1F4;
+            border: 1px solid #C79A3B;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .gallery-item:hover{
+            transform: translateY(-8px);
+        }
+        .gallery-item img{
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: 0.3s;
+        }
+        .gallery-item:hover img{
+            transform: scale(1.05);
+        }
+        .gallery-item h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 25px;
+            color: #C79A3B;
+            margin: 15px;
+        }
+        .gallery-bottom{
+            background-color: #FDF1F4;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .gallery-bottom h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-bottom p{
+            font-family: Georgia, serif;
+            font-size: 18px;
+            color: #C79A3B;
+        }
+        @media(max-width: 800px){
+
+            nav{
+                flex-direction: column;
+            }
+            .aflogo{
+                margin-bottom: 15px;
+            }
+            .af{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .gallery{
+                padding: 30px 20px;
+            }
+            .gallery-item{
+                width: 90%;
+            }
+        }
+        .copyright{
+            background-color: #FFFDF9;
+            border-top: 1px solid #C79A3B;
+            text-align: center;
+            padding: 20px;
+        }
+        .copyright img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .copyright p {
+        font-family: Georgia, serif;
+        font-size: 16px;
+        color: #1A1A1A;
+        margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="aflogo">
+            <img src="a&flogo.png" alt="Aura & Frame Logo">
+            <h1>Aura & Frame</h1>
+        </div>
+        <div class="af">
+            <a href="af.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="careers.html">Careers</a>
+        </div>
+    </nav>
+    <div class="gallery-heading">
+        <h1>Our Gallery</h1>
+        <p>BEAUTY • STYLE • MOMENTS</p>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="makeup.png" alt="Makeup Artistry">
+            <h2>Makeup Artistry</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="hair_styling.png" alt="Hairstyling">
+            <h2>Hairstyling</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="saree_draping.png" alt="Saree Draping">
+            <h2>Saree Draping</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="mehendi.png" alt="Mehendi Art">
+            <h2>Mehendi Art</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="videography.png" alt="Videography">
+            <h2>Videography</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="bridal.png" alt="Bridal Look">
+            <h2>Bridal Moments</h2>
+        </div>
+    </div>
+    <div class="gallery-bottom">
+        <h2>Beauty in Every Frame</h2>
+        <p>Creating beautiful looks and capturing moments that become memories.</p>
+    </div>
+    <footer class="copyright">
+    <img src="a&flogo.png" alt="Aura & Frame Logo">
+    <p>&copy; 2026 Aura & Frame. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

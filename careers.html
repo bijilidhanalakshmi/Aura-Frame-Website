@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Aura & Frame</title>
+    <link rel="icon" type="image/png" href="a&flogo.png">
+    <style>
+        body{
+            margin: 0;
+            background-color: #FFFDF9;
+            color: #1A1A1A;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #C79A3B;
+            background-color: #FFFDF9;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .aflogo{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .aflogo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        .aflogo h1{
+            color: #1A1A1A;
+            font-family: Garamond, Georgia, serif;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .af{
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+        .af a{
+            font-size: 24px;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-family: Garamond, Georgia, serif;
+            transition: 0.3s;
+        }
+        .af a:hover{
+            color: #C79A3B;
+            transform: translateY(-2px);
+        }
+        .career-heading{
+            text-align: center;
+            padding: 45px 20px 25px;
+        }
+        .career-heading h1{
+            font-family: Garamond, Georgia, serif;
+            font-size: 45px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .career-heading p{
+            color: #C79A3B;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .career-intro{
+            text-align: center;
+            background-color: #FDF1F4;
+            padding: 35px 20px;
+        }
+        .career-intro h2{
+            color: #C79A3B;
+            font-family: Garamond, Georgia, serif;
+            font-size: 32px;
+            margin-top: 0;
+        }
+        .career-intro p{
+            max-width: 750px;
+            margin: auto;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        .jobs{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 60px;
+        }
+        .job{
+            width: 350px;
+            background-color: #FFFDF9;
+            border: 1px solid #C79A3B;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+        .job:hover{
+            transform: translateY(-8px);
+            background-color: #FDF1F4;
+        }
+        .job h2{
+            color: #C79A3B;
+            font-family: Garamond, Georgia, serif;
+            font-size: 28px;
+            margin-top: 0;
+        }
+        .job p{
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        .job strong{
+            color: #1A1A1A;
+        }
+        .job a{
+            display: inline-block;
+            background-color: #C79A3B;
+            color: white;
+            text-decoration: none;
+            padding: 11px 25px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-family: Georgia, serif;
+            transition: 0.3s;
+        }
+        .job a:hover{
+            background-color: #1A1A1A;
+            transform: translateY(-2px);
+        }
+        .career-bottom{
+            background-color: #FDF1F4;
+            text-align: center;
+            padding: 45px 20px;
+        }
+        .career-bottom h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 34px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .career-bottom p{
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .career-bottom a{
+            color: #C79A3B;
+            text-decoration: none;
+        }
+        @media(max-width: 800px){
+            nav{
+                flex-direction: column;
+            }
+            .aflogo{
+                margin-bottom: 15px;
+            }
+            .af{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .jobs{
+                padding: 30px 20px;
+            }
+            .job{
+                width: 90%;
+            }
+        }
+        .copyright {
+            background-color: #FFFDF9;
+            border-top: 1px solid #C79A3B;
+            text-align: center;
+            padding: 20px;
+        }
+        .copyright img{
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .copyright p{
+            font-family: Georgia, serif;
+            font-size: 16px;
+            color: #1A1A1A;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="aflogo">
+            <img src="a&flogo.png" alt="Aura & Frame Logo">
+            <h1>Aura & Frame</h1>
+        </div>
+        <div class="af">
+            <a href="af.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="careers.html">Careers</a>
+        </div>
+    </nav>
+    <div class="career-heading">
+        <h1>Careers at Aura & Frame</h1>
+        <p>CREATE • GROW • INSPIRE</p>
+    </div>
+    <div class="career-intro">
+        <h2>Join Our Creative Team</h2>
+        <p>At Aura & Frame, we believe creativity becomes more beautiful when passionate people work together. Join our team and build your career while creating unforgettable beauty and visual experiences.</p>
+    </div>
+    <div class="jobs">
+        <div class="job">
+            <h2>Makeup Artist</h2>
+            <p><strong>Experience:</strong>0 - 2 Years</p>
+            <p><strong>Skills:</strong>Bridal Makeup, Party Makeup, Beauty Styling</p>
+            <p><strong>Location:</strong>Jubilee Hills, Hyderabad</p>
+            <p><strong>Job Type:</strong>Full Time</p>
+            <a href="#apply">Apply Now</a>
+        </div>
+        <div class="job">
+            <h2>Hairstylist</h2>
+            <p><strong>Experience:</strong>0 - 2 Years</p>
+            <p><strong>Skills:</strong>Bridal Hairstyles, Hair Styling, Hair Accessories</p>
+            <p><strong>Location:</strong>Jubilee Hills, Hyderabad</p>
+            <p><strong>Job Type:</strong>Full Time</p>
+            <a href="#apply">Apply Now</a>
+        </div>
+        <div class="job">
+            <h2>Mehendi Artist</h2>
+            <p><strong>Experience:</strong>0 - 2 Years</p>
+            <p><strong>Skills:</strong>Bridal Mehendi, Traditional & Modern Designs</p>
+            <p><strong>Location:</strong>Jubilee Hills, Hyderabad</p>
+            <p><strong>Job Type:</strong>Full Time</p>
+            <a href="#apply">Apply Now</a>
+        </div>
+        <div class="job">
+            <h2>Videographer</h2>
+            <p><strong>Experience:</strong>0 - 2 Years</p>
+            <p><strong>Skills:</strong>Photography, Videography, Wedding Shoots</p>
+            <p><strong>Location:</strong>Jubilee Hills, Hyderabad</p>
+            <p><strong>Job Type:</strong>Full Time</p>
+            <a href="#apply">Apply Now</a>
+        </div>
+    </div>
+    <div class="career-bottom" id="apply">
+        <h2>Want to Work With Us?</h2>
+        <p>Send your resume and portfolio to<br><br><a href="mailto:careers@auraandframe.com">careers@auraandframe.com</a></p>
+        <p>We would love to discover your creativity and welcome you to the Aura & Frame team.</p>
+    </div>
+    <footer class="copyright">
+    <img src="a&flogo.png" alt="Aura & Frame Logo">
+    <p>&copy; 2026 Aura & Frame. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

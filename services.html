@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Aura & Frame</title>
+    <link rel="icon" type="image/png" href="a&flogo.png">
+    <style>
+        body{
+            margin: 0;
+            background-color: #FFFDF9;
+            color: #1A1A1A;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #C79A3B;
+            background-color: #FFFDF9;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .aflogo{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .aflogo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        .aflogo h1{
+            color: #1A1A1A;
+            font-family: Garamond, Georgia, serif;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .af{
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+        .af a{
+            font-size: 24px;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-family: Garamond, Georgia, serif;
+            transition: 0.3s;
+        }
+        .af a:hover{
+            color: #C79A3B;
+            transform: translateY(-2px);
+        }
+        .services-heading{
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        .services-heading h1{
+            font-family: Garamond, Georgia, serif;
+            font-size: 45px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .services-heading p{
+            color: #C79A3B;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
+        .services{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            padding: 40px 60px 60px;
+        }
+        .service{
+            width: 320px;
+            background-color: #FDF1F4;
+            border: 1px solid #C79A3B;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .service:hover{
+            transform: translateY(-8px);
+        }
+        .service img{
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+        .service h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 28px;
+            color: #C79A3B;
+            margin: 20px 10px 10px;
+        }
+        .service p{
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 0 20px 20px;
+        }
+        .service-bottom{
+            text-align: center;
+            background-color: #FDF1F4;
+            padding: 45px 20px;
+        }
+        .service-bottom h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+        .service-bottom p{
+            font-family: Georgia, serif;
+            font-size: 18px;
+        }
+        @media(max-width: 800px){
+            nav{
+                flex-direction: column;
+            }
+            .aflogo{
+                margin-bottom: 15px;
+            }
+            .af{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .services{
+                padding: 30px 20px;
+            }
+        }
+        .service ul {
+            text-align: left;
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.8;
+            padding: 0 35px 25px 55px;
+            margin: 0;
+        }
+        .service li {
+            margin-bottom: 5px;
+        }
+        .copyright {
+            background-color: #FFFDF9;
+            border-top: 1px solid #C79A3B;
+            text-align: center;
+            padding: 20px;
+        }
+        .copyright img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .copyright p {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            color: #1A1A1A;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="aflogo">
+            <img src="a&flogo.png" alt="Aura & Frame Logo">
+            <h1>Aura & Frame</h1>
+        </div>
+        <div class="af">
+            <a href="af.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="careers.html">Careers</a>
+        </div>
+    </nav>
+    <div class="services-heading">
+        <h1>Our Services</h1>
+        <p>BEAUTY • STYLE • MOMENTS</p>
+    </div>
+    <div class="services">
+    <div class="service">
+        <img src="makeup.png" alt="Makeup Service">
+        <h2>Makeup Artistry</h2>
+        <ul>
+            <li>Bridal Makeup</li>
+            <li>Party Makeup</li>
+            <li>Natural & Elegant Looks</li>
+            <li>Special Occasion Makeup</li>
+        </ul>
+    </div>
+    <div class="service">
+        <img src="hair_styling.png" alt="Hairstyling Service">
+        <h2>Hairstyling</h2>
+        <ul>
+            <li>Bridal Hairstyles</li>
+            <li>Party Hairstyles</li>
+            <li>Traditional Hairstyles</li>
+            <li>Hair Accessories Styling</li>
+        </ul>
+    </div>
+    <div class="service">
+        <img src="saree_draping.png" alt="Saree Draping Service">
+        <h2>Saree Draping</h2>
+        <ul>
+            <li>Bridal Saree Draping</li>
+            <li>Traditional Draping</li>
+            <li>Modern Draping Styles</li>
+            <li>Special Occasion Draping</li>
+        </ul>
+    </div>
+    <div class="service">
+        <img src="mehendi.png" alt="Mehendi Service">
+        <h2>Mehendi Art</h2>
+        <ul>
+            <li>Bridal Mehendi</li>
+            <li>Traditional Designs</li>
+            <li>Arabic Mehendi</li>
+            <li>Modern Mehendi Designs</li>
+        </ul>
+    </div>
+    <div class="service">
+        <img src="videography.png" alt="Videography Service">
+        <h2>Videography</h2>
+        <ul>
+            <li>Wedding Videography</li>
+            <li>Event Videography</li>
+            <li>Creative Shoots</li>
+            <li>Special Moment Captures</li>
+        </ul>
+    </div>
+    <div class="service">
+        <img src="bridal package.png" alt="Bridal Beauty Service">
+        <h2>Bridal Package</h2>
+        <ul>
+            <li>Bridal Makeup</li>
+            <li>Hairstyling</li>
+            <li>Saree Draping</li>
+            <li>Complete Bridal Styling</li>
+        </ul>
+    </div>
+</div>
+    <div class="service-bottom">
+        <h2>Every Look Deserves a Beautiful Frame</h2>
+        <p>From creating your perfect look to capturing yourspecial moments, Aura & Frame is here to make them memorable.
+        </p>
+    </div>
+    <footer class="copyright">
+    <img src="a&flogo.png" alt="Aura & Frame Logo">
+    <p>&copy; 2026 Aura & Frame. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Aura & Frame</title>
+    <link rel="icon" type="image/png" href="aflogo.png">
+    <style>
+        body{
+            margin: 0;
+            background-color: #FFFDF9;
+            color: #1A1A1A;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 10px 50px;
+            border-bottom: 1px solid #C79A3B;
+            background-color: #FFFDF9;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .aflogo{
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .aflogo img{
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+        .aflogo h1{
+            color: #1A1A1A;
+            font-family: Garamond, Georgia, serif;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin: 0;
+            font-weight: normal;
+        }
+        .af{
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+        .af a{
+            font-size: 24px;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-family: Garamond, Georgia, serif;
+            transition: 0.3s;
+        }
+        .af a:hover{
+            color: #C79A3B;
+            transform: translateY(-2px);
+        }
+        .about-heading{
+            text-align: start;
+            padding: 40px 20px 20px;
+        }
+        .about-heading h1{
+            font-family: Garamond, Georgia, serif;
+            font-size: 45px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .who{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 40px 80px;
+        }
+        .who img{
+            width: 420px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .who-content{
+            width: 500px;
+        }
+        .who-content h2{
+            color: #C79A3B;
+            font-family: Garamond, Georgia, serif;
+            font-size: 36px;
+        }
+        .who-content p{
+            font-family: Georgia, serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .vision{
+            background-color: #FDF1F4;
+            text-align: center;
+            padding: 45px 100px;
+            margin-top: 30px;
+        }
+        .vision h2{
+            color: #C79A3B;
+            font-family: Garamond, Georgia, serif;
+            font-size: 36px;
+        }
+        .vision p{
+            font-family: Georgia, serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .awards{
+            text-align: center;
+            padding: 50px;
+        }
+        .awards h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .award-box{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .award{
+            width: 260px;
+            padding: 25px 20px;
+            background-color: #FDF1F4;
+            border: 1px solid #C79A3B;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .award:hover{
+            transform: translateY(-8px);
+        }
+        .award img{
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .award h3{
+            color: #C79A3B;
+            font-family: Garamond, Georgia, serif;
+            font-size: 24px;
+        }
+        .award p{
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .management{
+            text-align: center;
+            padding: 50px;
+            background-color: #FDF1F4;
+        }
+        .management h2{
+            font-family: Garamond, Georgia, serif;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .management-box{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .person{
+            width: 250px;
+            padding: 25px;
+            background-color: #FFFDF9;
+            border: 1px solid #C79A3B;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .person:hover{
+            transform: translateY(-8px);
+        }
+        .person img{
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #C79A3B;
+        }
+        .person h3{
+            color: #1A1A1A;
+            font-family: Garamond, Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        .person p{
+            color: #C79A3B;
+            font-family: Georgia, serif;
+            font-size: 17px;
+        }
+        @media(max-width: 800px){
+            nav{
+                flex-direction: column;
+            }
+            .aflogo{
+                margin-bottom: 15px;
+            }
+            .af{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .who{
+                flex-direction: column;
+                padding: 30px;
+            }
+            .who img{
+                width: 90%;
+                height: auto;
+            }
+            .who-content{
+                width: 90%;
+                text-align: center;
+            }
+            .vision{
+                padding: 40px;
+            }
+            .award-box{
+                flex-direction: column;
+                align-items: center;
+            }
+            .management-box{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .copyright{
+            background-color: #FFFDF9;
+            border-top: 1px solid #C79A3B;
+            text-align: center;
+            padding: 20px;
+        }
+        .copyright img{
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        .copyright p {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            color: #1A1A1A;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="aflogo">
+            <img src="a&flogo.png" alt="Aura & Frame Logo">
+            <h1>Aura & Frame</h1>
+        </div>
+        <div class="af">
+            <a href="af.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="careers.html">Careers</a>
+        </div>
+    </nav>
+    <div class="about-heading">
+        <h1>About</h1>
+        <a>Aura & Frame is a creative beauty and visual storytelling brand dedicated to making every moment beautiful and memorable. We bring together beauty, styling and creative photographyto create experiences that reflect elegance and individuality.</a>
+    </div>
+    <div class="who">
+        <img src="aboutimg.png" alt="About Aura & Frame">
+        <div class="who-content">
+            <h2>Who We Are</h2>
+            <p>Aura & Frame is a creative beauty and visual storytelling brand dedicated to making every special moment beautifuland memorable.</p>
+            <p>We bring together makeup artistry, hairstyling, sareedraping, mehendi and creative videography to providebeautiful experiences for our clients.</p>
+        </div>
+    </div>
+    <div class="vision">
+        <h2>Our Vision</h2>
+        <p>Our vision is to celebrate beauty, creativity and individuality. We aim to create elegant looks and capture meaningful moments that become beautiful memories for a lifetime.</p>
+    </div>
+    <div class="awards">
+        <h2>Awards & Achievements</h2>
+        <div class="award-box">
+            <div class="award">
+                <img src="best_beauty_studio_award.png" alt="Best Beauty Studio Award">
+                <h3>Best Beauty Studio</h3>
+                <p>Recognized for creativity and excellence in beauty and styling.</p>
+            </div>
+            <div class="award">
+                <img src="Creative Excellence Award.png" alt="Creative Excellence Award">
+                <h3>Creative Excellence</h3>
+                <p>Awarded for creating elegant and memorable client experiences.<p>
+            </div>
+            <div class="award">
+                <img src="Client Choice Award.png" alt="Client Choice Award">
+                <h3>Client Choice Award</h3>
+                <p>Appreciated for quality service and customer satisfaction.</p>
+            </div>
+        </div>
+    </div>
+    <div class="management">
+        <h2>Our Management</h2>
+        <div class="management-box">
+            <div class="person">
+                <img src="ceo.png" alt="CEO">
+                <h3>Arjun Varma</h3>
+                <p>Chief Executive Officer</p>
+            </div>
+            <div class="person">
+                <img src="cto.png" alt="CTO">
+                <h3>Raghav Mehra</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="person">
+                <img src="coo.png" alt="COO">
+                <h3>Ananya Reddy</h3>
+                <p>Chief Operating Officer</p>
+            </div>
+        </div>
+    </div>
+    <footer class="copyright">
+    <img src="a&flogo.png" alt="Aura & Frame Logo">
+    <p>&copy; 2026 Aura & Frame. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
